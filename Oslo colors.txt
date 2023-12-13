@@ -1,0 +1,2 @@
+Oslo_color = RGBA 647495ff
+Oslo_bcolor = RGBA 53607cff

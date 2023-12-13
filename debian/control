@@ -1,0 +1,20 @@
+Source: ndwaita-gnome
+Section: misc
+Priority: optional
+Maintainer: NordLex <g.nordlex@gmail.com.com>
+Build-Depends: debhelper-compat (= 13)
+Homepage: https://empty.com/ndwaita-gnome
+
+Package: ndwaita-gnome
+Architecture: all
+Depends:
+ gnome-shell,
+ gnome-shell-extensions,
+ fonts-cantarell,
+ make,
+ libglib2.0-dev-bin,
+ graphicsmagick-imagemagick-compat,
+Description: NdWaita gnome-shell theme
+ NdWaita is a GNOME Shell theme inspired by material design. It is mostly
+ flat using a colorful palette with some shadows, highlights, and gradients for
+ some depth.

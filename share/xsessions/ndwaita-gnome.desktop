@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=NdWaita
+Comment=This session logs you into NdWaita GNOME
+Exec=env GNOME_SHELL_SESSION_MODE=ndwaita gnome-session
+TryExec=gnome-session
+Type=Application
+DesktopNames=NdWaita-GNOME;GNOME;
