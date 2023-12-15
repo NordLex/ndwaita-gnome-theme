@@ -4,7 +4,7 @@ $slider_size: 16px;
 
 .slider {
   // slider trough
-  -barlevel-height: 4px;
+  -barlevel-height: 8px; // (NordLex) 4px;
   -barlevel-background-color: transparentize($fg_color, 0.8); //background of the trough
   -barlevel-border-width: 2px; 
   -barlevel-border-color: transparent; // trough border color

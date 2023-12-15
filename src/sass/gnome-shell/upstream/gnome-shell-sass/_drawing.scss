@@ -155,7 +155,7 @@
   // normal button
   @if $t==normal {
     color: $tc;
-    background-color: $button_bg_color;
+    background-color: transparentize($button_bg_color, 0.5); // (NordLex) $button_bg_color;
     @if $flat {
       background-color: transparent;
     }
@@ -386,25 +386,25 @@
 @mixin panel_button($bg:$panel_fg_color, $fg:$panel_fg_color, $flat: true, $highlighted_child: false, $child_class:"") {
 
   transition-duration: 150ms;
-  border: 6px solid transparent; // (NordLex) 3px
+  border: 8px solid transparent; // (NordLex) 3px
   border-radius: 14px; // (NordLex) 99px;
 
   font-weight: bold;
-  background-color: $bg_color; // (NordLex) transparent;
+  background-color: transparent;
   color: $fg;
 
   @if $flat {
-    box-shadow: none;
+    box-shadow: inset 0 0 0 100px transparentize($panel_bg_color, 0.1); // (NordLex) none;
 
     &:active, &:focus, &:checked {
-      box-shadow: inset 0 0 0 100px transparentize($fg, 0.75);
+      box-shadow: inset 0 0 0 100px transparentize($panel_bg_color, 0.4); // (NordLex) $fg, 0.75);
       &:hover {
-        box-shadow: inset 0 0 0 100px transparentize($fg, 0.65);
+        box-shadow: inset 0 0 0 100px transparentize($panel_bg_color, 0.5); // (NordLex) $fg, 0.65);
       }
     }
 
     &:hover {
-      box-shadow: inset 0 0 0 100px transparentize($fg, 0.8);
+      box-shadow: inset 0 0 0 100px transparentize($panel_bg_color, 0.5); // (NordLex) $fg, 0.8);
     }
 
   } @else {
@@ -428,18 +428,19 @@
 
     #{$child_class} {
       transition-duration: 150ms;
-      border: 3px solid transparent;
-      border-radius: 99px;
+      border: 8px solid transparent; // (NordLex) 3px
+      border-radius: 14px; // (NordLex) 99px;
+      box-shadow:  inset 0 0 0 100px transparentize($panel_bg_color, 0.1) !important; // (NordLex) new
     }
 
     &:active, &:focus, &:checked {
       box-shadow: none !important;
 
       #{$child_class} {
-        box-shadow: inset 0 0 0 100px transparentize($fg, 0.75);
+        box-shadow: inset 0 0 0 100px transparentize($panel_bg_color, 0.4) !important;
 
         &:hover {
-          box-shadow: inset 0 0 0 100px transparentize($fg, 0.65) !important;
+          box-shadow: inset 0 0 0 100px transparentize($panel_bg_color, 0.5) !important;
         }
       }
     }
@@ -447,7 +448,7 @@
     &:hover {
       box-shadow: none !important;
       #{$child_class} {
-        box-shadow: inset 0 0 0 100px transparentize($fg, 0.8);
+        box-shadow: inset 0 0 0 100px transparentize($panel_bg_color, 0.5) !important;
       }
     }
   }

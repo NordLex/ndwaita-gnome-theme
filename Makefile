@@ -1,4 +1,4 @@
-PKGNAME = ndwaita-gnome
+PKGNAME = ndwaita-gnome-theme
 MAINTAINER = NordLex <g.nordlex@gmail.com>
 UBUNTU_RELEASE = jammy
 PREFIX ?= /usr

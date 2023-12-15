@@ -25,15 +25,15 @@ $submenu_bg_color: lighten($menu_bg_color, 7%);
 // popover content
 .popup-menu-content {
   padding: $base_padding;
-  background-color: $bg_color;
-  border-radius: $modal_radius*1.25;
-  border: 1px solid $outer_borders_color;
+  background-color: transparentize($bg_color, 0.1); // (NordLex) $bg_color
+  border-radius: $modal_radius; // (NordLex) *1.25;
+  border: 2px solid $border_color; // (NordLex) 1px solid $outer_borders_color;
   box-shadow: 0 2px 4px 0 $shadow_color;
 }
 
 // menu items
 .popup-menu-item {
-  @include menuitem($bg:$menu_bg_color);
+  @include menuitem($bg:transparentize($menu_bg_color, 0.5));
 
   border-radius: $menuitem_border_radius;
 

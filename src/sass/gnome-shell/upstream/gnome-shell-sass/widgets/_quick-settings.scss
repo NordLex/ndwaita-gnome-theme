@@ -1,6 +1,6 @@
 .quick-settings {
   padding: $base_padding*3;
-  border-radius: $modal_radius*2.25;
+  border-radius: $modal_radius; // (NordLex) *2.25;
 
   .icon-button, .button {
     padding: $base_padding*1.75;
@@ -13,7 +13,7 @@
 }
 
 .quick-toggle, .quick-menu-toggle {
-  border-radius: 99px;
+  border-radius: $modal_radius;// (NordLex) 99px;
   min-width: 12em;
   max-width: 12em;
   min-height: 48px;
@@ -29,8 +29,8 @@
      to extend to the border */
   &.button { padding: 0; }
   & > StBoxLayout { padding: 0 $base_padding*2; }
-  &:ltr > StBoxLayout { padding-left: $base_padding*2.5; }
-  &:rtl > StBoxLayout { padding-right: $base_padding*2.5; }
+  &:ltr > StBoxLayout { padding-left: $base_padding *2.5; }
+  &:rtl > StBoxLayout { padding-right: $base_padding *2.5; }
 
   .quick-toggle-title { font-weight: bold; }
 
@@ -47,13 +47,13 @@
     min-width: auto;
     max-width: auto;
 
-    &:ltr { border-radius: 99px 0 0 99px; }
-    &:ltr > StBoxLayout { padding-right: $base_padding*1.5; }
-    &:rtl { border-radius: 0 99px 99px 0; }
-    &:rtr > StBoxLayout { padding-left: $base_padding*1.5; }
+    &:ltr { border-radius: $modal_radius 0 0 $modal_radius; } // (NordLex) 99px 0 0 99px; }
+    &:ltr > StBoxLayout { padding-right: $base_padding *1.5; }
+    &:rtl { border-radius: 0 $modal_radius $modal_radius 0; } // (NordLex) 0 99px 99px 0; }
+    &:rtr > StBoxLayout { padding-left: $base_padding *1.5; }
 
-    &:ltr:last-child { border-radius: 99px; }
-    &:rtl:last-child { border-radius: 99px; }
+    &:ltr:last-child { border-radius: $modal_radius; } // (NordLex) 99px; }
+    &:rtl:last-child { border-radius: $modal_radius; } // (NordLex) 99px; }
   }
 
   & .quick-toggle-arrow {
@@ -67,12 +67,12 @@
     }
 
     &:ltr {
-      border-radius: 0 99px 99px 0;
-      border-left-width: 1px;
+      border-radius: 0 $modal_radius $modal_radius 0; // (NordLex) 0 99px 99px 0;
+      border-left-width: 0px; // (NordLex) 1px;
     }
     &:rtl {
-      border-radius: 99px 0 0 99px;
-      border-right-width: 1px;
+      border-radius: $modal_radius 0 0 $modal_radius; // (NordLex) 99px 0 0 99px;
+      border-right-width: 0px; // (NordLex) 1px;
     }
   }
 }
@@ -96,7 +96,7 @@
   background-color: $bg_color !important;
   color: $fg_color !important;
 
-  border-radius: $base_border_radius*3;
+  border-radius: $modal_radius; // (NordLex) *3;
   padding: $base_padding*2;
   margin: $base_padding*2 $base_padding*3 0;
 
@@ -109,7 +109,7 @@
 
     & .icon {
       icon-size: $base_icon_size*1.5; // a non-standard symbolic size but ok
-      border-radius: 999px;
+      border-radius: $modal_radius; // (NordLex) 999px;
       padding: 1.5 * $base_padding;
       background-color: transparentize($fg_color, 0.8);
 

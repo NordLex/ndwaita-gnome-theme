@@ -45,7 +45,7 @@ $base_font_size: 12; // (NordLex) 11;
 $text_shadow_color: if($variant == 'light', rgba(255,255,255,0.3), rgba(0,0,0,0.2));
 
 // icons
-$base_icon_size: 1.09em;
+$base_icon_size: 1.29em; // (NordLex) 1.09em;
 $large_icon_size: $base_icon_size*2; // 32px
 // $base_icon_size: 16px;
 
@@ -168,7 +168,7 @@ stage {
 
 // tooltip
 %tooltip {
-  background-color: transparentize(black, 0.3); // (NordLex) transparentize(black, 0.1);
+  background-color: transparentize(black, 0.9); // (NordLex) transparentize(black, 0.1);
   border: 1px solid transparentize($light_1, 0.9);
   color: $light_1;
 
