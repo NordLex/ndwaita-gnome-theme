@@ -1,0 +1,8 @@
+// border radii
+$base_border_radius: 6px;
+
+// fonts
+$base_font_size: 12;
+
+$bg_color: if($variant == 'light', $light_2, $base_color);
+$border_color: #808080;

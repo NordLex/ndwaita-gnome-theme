@@ -10,6 +10,7 @@ $text_color: if($variant == 'light', black, white);
 $bg_color: if($variant == 'light', #ffffff, darken($_dark_base_color, 2%))!default;
 $fg_color: if($variant == 'light', #5c616c, #eeeeec);
 
+$border_color: #808080; // (NordLex) added
 $selected_fg_color: #ffffff!default;
 $selected_bg_color: saturate(#6188ca, 20%)!default;
 $selected_borders_color: if($variant== 'light', darken($selected_bg_color, 15%), darken($selected_bg_color, 30%));

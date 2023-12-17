@@ -21,7 +21,7 @@ $panel_transition_duration: 50ms; // (NordLex) 250ms; // same as the overview tr
 
   // panel menus
   .panel-button {
-    @include panel_button($panel_fg_color);
+    @include panel_button($panel_fg_color, $flat: false); // (NordLex) add "$flat: false"
     -natural-hpadding: $base_padding * 2;
     -minimum-hpadding: $base_padding;
 
@@ -83,7 +83,7 @@ $panel_transition_duration: 50ms; // (NordLex) 250ms; // same as the overview tr
       // The clock display needs to have the background on .clock because
       // we want to exclude the do-not-disturb indicator from the background
       // see _drawing.scss for override details
-      @include panel_button($highlighted_child: true, $child_class:".clock");
+      @include panel_button($flat: false, $highlighted_child: true, $child_class:".clock"); // (NordLex) add "$flat: false"
 
       .clock {
         // the highlighted child
