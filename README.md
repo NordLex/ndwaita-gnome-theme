@@ -1,5 +1,5 @@
 # NdWaita-gnome-theme
-Gnome 45 theme
+Gnome-shell 45 theme
 
 ![theme preview](https://github.com/NordLex/ndwaita-gnome-theme/raw/main/assets/settings_light.png)
 
