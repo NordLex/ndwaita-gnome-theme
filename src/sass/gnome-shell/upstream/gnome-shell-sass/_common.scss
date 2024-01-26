@@ -179,11 +179,11 @@ stage {
 
 // tooltip
 %tooltip {
-  background-color: transparentize(black, 0.9); // (NordLex) transparentize(black, 0.1);
-  border: 1px solid transparentize($light_1, 0.1); // (NordLex) 0.9
+  background-color: transparentize(black, 0.4); // (NordLex) transparentize(black, 0.1);
+  border: 1px solid transparentize($light_1, 0.2); // (NordLex) 0.9
   color: $light_1;
 
-  border-radius: 99px;
+  border-radius: 9px;
   padding: $base_padding $base_padding * 2;
   text-align: center;
 

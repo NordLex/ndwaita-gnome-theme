@@ -240,10 +240,10 @@ StEntry {
     margin-bottom: 8px; }
 
 .dash-label, .window-caption, .screenshot-ui-tooltip {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   color: #ffffff;
-  border-radius: 99px;
+  border-radius: 9px;
   padding: 6px 12px;
   text-align: center; }
 

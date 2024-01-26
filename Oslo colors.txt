@@ -1,2 +1,8 @@
-Oslo_color = RGBA 647495ff
-Oslo_bcolor = RGBA 53607cff
+== Light ==
+background-light = RGBA d6e0ffff; #d6e0ff;
+accent-light = RGBA 8da6d8ff; #8da6d8;
+
+== Dark ==
+bakground-dark = RGBA 0f1420ff; #0f1420;
+accend-dark = RGBA 516da4ff; #516da4;
+Oslo_bcolor = RGBA 53607cff; #53607c
